@@ -61,14 +61,14 @@ npm start
 
 ```bash
 # 拉取镜像
-docker pull swr.cn-south-1.myhuaweicloud.com/staryokina/simple-image-viewer:v1
+docker pull swr.cn-south-1.myhuaweicloud.com/staryokina/simple-image-viewer:v2
 
 # 运行容器
 docker run -d \
   --name simple-image-viewer \
   -p 3000:3000 \
   -v /path/to/your/images:/app/public/images:ro \
-  swr.cn-south-1.myhuaweicloud.com/staryokina/simple-image-viewer:v1
+  swr.cn-south-1.myhuaweicloud.com/staryokina/simple-image-viewer:v2
 ```
 
 **参数说明:**
@@ -80,14 +80,14 @@ docker run -d \
 
 ### 使用 Docker Compose
 
-创建 `docker-compose.yml` 文件：
+编辑现有的 `docker-compose.yml` 文件，或参考以下配置：
 
 ```yaml
-version: '3.8'
-
 services:
   simple-image-viewer:
-    image: swr.cn-south-1.myhuaweicloud.com/staryokina/simple-image-viewer:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
     volumes:
