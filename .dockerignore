@@ -1,0 +1,104 @@
+# 依赖项
+node_modules
+npm-debug.log*
+
+# 构建输出
+.next/
+out/
+
+# 生产构建
+build
+
+# 运行时数据
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# 覆盖率目录
+coverage
+
+# nyc 测试覆盖率
+.nyc_output
+
+# Grunt 中间存储
+.grunt
+
+# Bower 依赖目录
+bower_components
+
+# node-waf 配置
+.lock-wscript
+
+# 编译的二进制插件
+build/Release
+
+# 依赖目录
+node_modules/
+jspm_packages/
+
+# TypeScript v1 声明文件
+typings/
+
+# 可选的 npm 缓存目录
+.npm
+
+# 可选的 eslint 缓存
+.eslintcache
+
+# 可选的 REPL 历史
+.node_repl_history
+
+# 输出的 npm 包
+*.tgz
+
+# Yarn 完整性文件
+.yarn-integrity
+
+# dotenv 环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# parcel-bundler 缓存
+.cache
+.parcel-cache
+
+# next.js 构建输出
+.next
+
+# nuxt.js 构建输出
+.nuxt
+
+# vuepress 构建输出
+.vuepress/dist
+
+# Serverless 目录
+.serverless
+
+# 开发工具
+.vscode
+.idea
+
+# OS 生成的文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# README
+README.md

@@ -1,0 +1,16 @@
+services:
+  simple-image-viewer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: swr.cn-south-1.myhuaweicloud.com/staryokina/simple-image-viewer:v1
+    ports:
+      - "3000:3000"
+    volumes:
+      # 挂载本地图片目录到容器
+      - ./public/images:/app/public/images:ro
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    restart: unless-stopped
+    container_name: simple-image-viewer
