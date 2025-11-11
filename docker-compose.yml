@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: swr.cn-south-1.myhuaweicloud.com/staryokina/simple-image-viewer:v1
+    image: swr.cn-south-1.myhuaweicloud.com/staryokina/simple-image-viewer:v2
     ports:
       - "3000:3000"
     volumes:
